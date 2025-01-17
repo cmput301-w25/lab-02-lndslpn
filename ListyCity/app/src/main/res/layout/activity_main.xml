@@ -7,11 +7,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/city"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@color/button"
+        android:text="@string/confirm"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toEndOf="@+id/input_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:background="@color/button"
+        android:text="@string/addName"
+        app:layout_constraintBottom_toTopOf="@+id/city_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/deleteName"
+        android:background="@color/button"
+        app:layout_constraintBottom_toTopOf="@+id/city_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ListView
         android:id="@+id/city_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

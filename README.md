@@ -4,7 +4,7 @@
 ## Student Details
 
 - **Full Name:** `Landys Lepine`
-- **CCID:** `landus`
+- **CCID:** `landys`
 
 ## References and Resources
 
